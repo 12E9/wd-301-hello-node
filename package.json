@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "eslint": "^8.29.0",
     "minimist": "^1.2.7"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
   }
 }
