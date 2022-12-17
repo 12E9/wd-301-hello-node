@@ -5,15 +5,25 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write"
+    ]
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^8.29.0",
     "minimist": "^1.2.7"
   },
   "devDependencies": {
-    "jest": "^29.3.1"
+    "eslint": "^8.30.0",
+    "husky": "^8.0.2",
+    "jest": "^29.3.1",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1"
   }
 }
